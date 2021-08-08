@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "171897996598",
+    "project_id": "farminghealthassistantproject",
+    "storage_bucket": "farminghealthassistantproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171897996598:android:b6608ae0a5181fcc81df97",
+        "android_client_info": {
+          "package_name": "com.example.farminghealthassistant2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171897996598-5tg2hc216uacp503gutl1ief3jb3h34f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz5RLgYOEl48oLPCKrYyuAGkL2-q_Dobc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171897996598-5tg2hc216uacp503gutl1ief3jb3h34f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TakingPicturesActivity">
+
+    <TextView
+        android:id="@+id/take_pic_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="236dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/take_a_picture_of_your_crop_or_livestock"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/taken_pic_ImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/take_pic_btn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/to_take_a_picture_tap_the_image_button_below"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/take_pic_text"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/button_to_take_picture"
+        app:layout_constraintStart_toStartOf="@+id/take_pic_btn_text"
+        app:layout_constraintTop_toBottomOf="@+id/take_pic_btn_text"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        tools:ignore="RedundantDescriptionCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/taken_pic_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="212dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/taken_picture"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/taken_pic_ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/image_of_crop_or_livestock_taken_for_analysis"
+        android:maxWidth="250dp"
+        android:maxHeight="250dp"
+        app:layout_constraintStart_toEndOf="@+id/taken_pic_text"
+        app:layout_constraintTop_toBottomOf="@+id/taken_pic_text"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/upload_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:backgroundTint="#6B0D55"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/upload_for_analysis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taken_pic_ImageView" />
+
+    <Button
+        android:id="@+id/see_analysis_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#51B73B"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/see_analysis"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upload_btn" />
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#6B5D18"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/logout"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upload_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
